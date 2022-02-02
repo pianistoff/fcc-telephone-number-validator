@@ -9,8 +9,8 @@ parent {
     transform: translate(-50%, -50%);
   }
   
-  textarea {
-    width: 282.92px;
+  input {
+    width: 444.84px;
     border: 1px solid black;
   }
   
@@ -19,7 +19,7 @@ parent {
     background-color: white;
     border: 1px solid black;
     margin: 0 auto;
-    width: 282.92px;
+    width: 444.84px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-top: 10px;

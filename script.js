@@ -1,21 +1,23 @@
-function palindrome(str) {
-    const converted = str.replace(/[^0-9a-z]/gi, '').toLowerCase();
-    const arr = [];
-    converted.split('').forEach(letter => arr.unshift(letter));
-    if (converted === arr.join('')) {
-      return true;
-    } else {
-      return false
-    }
-  }
-
-function display(str) {
-    const result = document.getElementById("result");
-    if (palindrome(str)) {
-        result.textContent = "This is a palindrome!";
-        result.style.color = "green";
-    } else {
-        result.textContent = "This is not a palindrome!";
-        result.style.color = "red";
-    }
+function telephoneCheck(str) {
+  return /^1?\s?(\(\d{3}\)|\d{3})[-\s]?\d{3}[-\s]?\d{4}$/.test(str);
 }
+
+function check(tel) {
+  const result = document.getElementById("result");
+  if (telephoneCheck(tel)) {
+      result.textContent = "This is a valid phone number!";
+      result.style.color = "green";
+  } else {
+      result.textContent = "This is not a valid phone number!";
+      result.style.color = "red";
+  }
+}
+
+const input = document.getElementById("input");
+
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("button").click();
+  }
+});
