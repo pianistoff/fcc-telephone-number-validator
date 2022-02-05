@@ -1,36 +1,35 @@
 parent {
     position: relative;
-  }
-  
-  .child {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  input {
-    width: 444.84px;
-    border: 1px solid black;
-  }
-  
-  button {
-    display: block;
-    background-color: white;
-    border: 1px solid black;
-    margin: 0 auto;
-    width: 444.84px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-top: 0;
-  }
-  
-  p {
-    text-align: center;
-  }
+}
+
+.child {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input {
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+button {
+  display: block;
+  background-color: white;
+  border: 1px solid black;
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+p {
+  text-align: center;
+}
